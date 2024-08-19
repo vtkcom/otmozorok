@@ -22,7 +22,7 @@ body {
   overflow: hidden;
 }
 
-p {
+div {
   position: absolute;
   top: 0;
   left: 0;
@@ -34,7 +34,6 @@ p {
   margin: 0;
   line-height: 10px;
   text-align: justify;
-  pointer-events: none;
   user-select: none;
   background-image: url(../img/panama-mini.jpg);
   background-repeat: no-repeat;
@@ -57,28 +56,18 @@ img {
   user-select: none;
 }
 
-div {
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 span {
   position: absolute;
   inset: 0px;
-  background: rgb(195, 136, 34);
-  background: radial-gradient(
-    circle,
-    rgba(195, 136, 34, 0.2) 0%,
-    rgba(45, 253, 146, 0.2) 100%
-  );
+  background-image: url(../img/panama-mini.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   mask: radial-gradient(
     circle at var(--x) var(--y),
     rgba(0, 0, 0, 0.7),
-    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.5),
+    transparent,
     transparent,
     transparent,
     transparent
