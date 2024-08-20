@@ -22,11 +22,16 @@ body {
   overflow: hidden;
 }
 
-div {
+canvas {
   position: absolute;
   top: 0;
   left: 0;
-  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+}
+
+div {
+  position: relative;
   width: 100vw;
   height: 100vh;
   font-size: 10px;
@@ -34,25 +39,6 @@ div {
   margin: 0;
   line-height: 10px;
   text-align: justify;
-  user-select: none;
-  background-image: url(../img/panama-mini.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0.0002);
-}
-
-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  max-height: 50px;
-  object-position: center;
-  z-index: 10;
-  pointer-events: none;
   user-select: none;
 }
 
