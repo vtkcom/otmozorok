@@ -6,7 +6,7 @@ canvas.width = window.innerWidth;
 
 let alphabet = "otmozorok";
 
-let fontSize = 18;
+let fontSize = 16;
 let columns = canvas.width / fontSize;
 
 let rainDrops = [];
